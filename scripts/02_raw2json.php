@@ -130,6 +130,7 @@ foreach($years AS $year => $yearPath) {
             file_put_contents($pagePath . '/index.html', $page);
             file_put_contents($pagePath . '/' . $data['登記日期'] . '.html', $page);
             $jsonFile = $pagePath . '/history.json';
+            $json = [];
             if(file_exists($jsonFile)) {
                 $json = json_decode(file_get_contents($jsonFile), true);
             }
