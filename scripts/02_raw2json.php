@@ -84,7 +84,10 @@ foreach($years AS $year => $yearPath) {
             }
             $data['許可機關日期'] = strtr($data['許可機關日期'], $approvedBy1);
             $data['許可機關日期'] = preg_replace($approvedBy2, $approvedBy3, $data['許可機關日期']);
+            $data['法人名稱'] = str_replace('　', '', $data['法人名稱']);
+            $data['設立登記日期'] = str_replace('　', '', $data['設立登記日期']);
             $dbKey = $data['法人名稱'] . $data['設立登記日期'];
+            
             if(isset($listKeys[$data['許可機關日期']])) {
                 $pk = $listKeys[$data['許可機關日期']];
             } elseif(isset($dbKeys[$dbKey])) {
