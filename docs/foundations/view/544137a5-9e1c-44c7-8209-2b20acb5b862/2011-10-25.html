@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>社團法人中華淨意文教促進會 @ 社團/財團法人資料檢索</title>
-    <meta name="description"
-        content="社團法人中華淨意文教促進會 藉由慈善活動，結合宗教文化在互動中，資源共享、物質援助、身心靈輔導、關懷、人文教育促使個人從修身做起，學習釋、道、儒的基本課程，推展至各種型態的活動，來達到淨化身心靈的目標，由家庭為單位，逐漸推展至學校、社區配合政府政策的推動，改善社會風氣，促使國家安定，人民富裕，進而推動世界大同，地球一村的境界。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
+    <meta name="description" content="社團法人中華淨意文教促進會 藉由慈善活動，結合宗教文化在互動中，資源共享、物質援助、身心靈輔導、關懷、人文教育促使個人從修身做起，學習釋、道、儒的基本課程，推展至各種型態的活動，來達到淨化身心靈的目標，由家庭為單位，逐漸推展至學校、社區配合政府政策的推動，改善社會風氣，促使國家安定，人民富裕，進而推動世界大同，地球一村的境界。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -26,6 +27,25 @@
         </div>
     </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <p class="hidden-sm hidden-xs">&nbsp;</p>
+                <form class="search-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" value="" class="form-control" placeholder="搜尋…" autofocus>
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-primary btn-foundation">找法人</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="hidden-sm hidden-xs">&nbsp;</p>
+            <div class="col-md-12">
+                <div class="btn-group">
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div id="FoundationsView" class="col-md-12">
                 <h2>社團法人中華淨意文教促進會</h2>
@@ -59,9 +79,7 @@
                             <dt>功能</dt>
                             <dd>
                                 <div class="btn-group">
-                                    <a target="_blank"
-                                        href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/yPL2tDbwneudoU7c_6v7YNJ-oPC14-ZdUaS0AAr_qXZlwR_uAFyr4MAQ3orw"
-                                        class="btn btn-success btn-sm">原始連結</a>
+                                    <a target="_blank" href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/yPL2tDbwneudoU7c_6v7YNJ-oPC14-ZdUaS0AAr_qXZlwR_uAFyr4MAQ3orw" class="btn btn-success btn-sm">原始連結</a>
                                 </div>
                             </dd>
                         </dl>
@@ -130,20 +148,18 @@
                     <li>
                         <a href="https://facebook.com/k.olc.tw/" target="_blank">江明宗</a>
                     </li>
-                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a></li>
+                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function() {
-        $.getJSON('history.json', {}, function(c) {
-            var links = '';
-            for(k in c) {
-                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
-            }
-            $('#history').append(links);
-        });
-    })</script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        var baseUrl = '../../../';
+    </script>
+    <script src="../../../js/main.js"></script>
 </body>
+
 </html>

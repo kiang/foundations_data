@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>社團法人高雄市腦中風病友協會 @ 社團/財團法人資料檢索</title>
-    <meta name="description"
-        content="社團法人高雄市腦中風病友協會 以提供病友及其家屬各項醫療諮詢與衛教服務，協助其與醫護相關人員間溝通；藉活動增進病友彼此間感情聯繫，凝聚團體力量並相互扶持與鼓勵；爭取合理之社會福利與權益，提升病友醫療照護、生活品質與生命尊嚴。積極辦理和參與在地社區腦中風衛教宣導，促進民眾對於腦中風相關疾病的了解，以期降低腦中風發生率以及預防各種併發症，增進國民健康，減輕個人、家庭、社會負擔為宗旨。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
+    <meta name="description" content="社團法人高雄市腦中風病友協會 以提供病友及其家屬各項醫療諮詢與衛教服務，協助其與醫護相關人員間溝通；藉活動增進病友彼此間感情聯繫，凝聚團體力量並相互扶持與鼓勵；爭取合理之社會福利與權益，提升病友醫療照護、生活品質與生命尊嚴。積極辦理和參與在地社區腦中風衛教宣導，促進民眾對於腦中風相關疾病的了解，以期降低腦中風發生率以及預防各種併發症，增進國民健康，減輕個人、家庭、社會負擔為宗旨。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -26,6 +27,25 @@
         </div>
     </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <p class="hidden-sm hidden-xs">&nbsp;</p>
+                <form class="search-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" value="" class="form-control" placeholder="搜尋…" autofocus>
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-primary btn-foundation">找法人</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="hidden-sm hidden-xs">&nbsp;</p>
+            <div class="col-md-12">
+                <div class="btn-group">
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div id="FoundationsView" class="col-md-12">
                 <h2>社團法人高雄市腦中風病友協會</h2>
@@ -59,9 +79,7 @@
                             <dt>功能</dt>
                             <dd>
                                 <div class="btn-group">
-                                    <a target="_blank"
-                                        href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/9iHGuLNnRAkmbBjS-vtUTR8aZZ0jIK8BAw_6_s9CUxgj2Ds9oPjQRd5nMU4Z"
-                                        class="btn btn-success btn-sm">原始連結</a>
+                                    <a target="_blank" href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/9iHGuLNnRAkmbBjS-vtUTR8aZZ0jIK8BAw_6_s9CUxgj2Ds9oPjQRd5nMU4Z" class="btn btn-success btn-sm">原始連結</a>
                                 </div>
                             </dd>
                         </dl>
@@ -130,20 +148,18 @@
                     <li>
                         <a href="https://facebook.com/k.olc.tw/" target="_blank">江明宗</a>
                     </li>
-                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a></li>
+                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function() {
-        $.getJSON('history.json', {}, function(c) {
-            var links = '';
-            for(k in c) {
-                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
-            }
-            $('#history').append(links);
-        });
-    })</script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        var baseUrl = '../../../';
+    </script>
+    <script src="../../../js/main.js"></script>
 </body>
+
 </html>

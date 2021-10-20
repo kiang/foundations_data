@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>財團法人中心診所 @ 社團/財團法人資料檢索</title>
-    <meta name="description"
-        content="財團法人中心診所 本財團法人為闡揚醫學，維繫人才，推展公教人員醫療保險，救助貧苦病患，辦理義診及學術研究，發行臨床醫學報告，以服務社會大眾為目的。
+    <meta name="description" content="財團法人中心診所 本財團法人為闡揚醫學，維繫人才，推展公教人員醫療保險，救助貧苦病患，辦理義診及學術研究，發行臨床醫學報告，以服務社會大眾為目的。
 （捐助方法：由張祖棻、田可高、鄒天增、管玉貞、江澤春、林啓賢、張遵、姜必寧、尹宗高、杜炎昌、盧健泰、黃天賜、施純仁、王學仕、鄭不非、俞紹基、王寶翠、羅光瑞、姜壽德、楊大中、俞瑞璋、譚柱光、王樹榮、張斌、洪楚琛、季素玫、張逢源、林和鳴、唐謙謀、杜聖楷、劉景鴻、張中序、張新湘、蕭遺生、王丕延、朱邦猷、于俊、酆特曾、李有柄、周道香、文忠傑、費筱宗、黃雲飛、朱復禮、趙彬宇、姚慈恕、呂曄彬、楊雲官、榮寳峰、金鏗年、鄧恕微、乾光宇、潘樹人、孟憲傑、朱克剛、丁良、盧光舜、許萬宜、王師揆、徐道昌、趙祖淼、惠慶元、楊樹滋、張正暘、劉中一等共同捐助） / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -27,6 +28,25 @@
         </div>
     </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <p class="hidden-sm hidden-xs">&nbsp;</p>
+                <form class="search-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" value="" class="form-control" placeholder="搜尋…" autofocus>
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-primary btn-foundation">找法人</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="hidden-sm hidden-xs">&nbsp;</p>
+            <div class="col-md-12">
+                <div class="btn-group">
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div id="FoundationsView" class="col-md-12">
                 <h2>財團法人中心診所</h2>
@@ -61,9 +81,7 @@
                             <dt>功能</dt>
                             <dd>
                                 <div class="btn-group">
-                                    <a target="_blank"
-                                        href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/_CA3h75FTWnJNEhdcL7dG_QJCSUJFNLOLpleO_R7Ei_ysRg29CY="
-                                        class="btn btn-success btn-sm">原始連結</a>
+                                    <a target="_blank" href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/_CA3h75FTWnJNEhdcL7dG_QJCSUJFNLOLpleO_R7Ei_ysRg29CY=" class="btn btn-success btn-sm">原始連結</a>
                                 </div>
                             </dd>
                         </dl>
@@ -132,20 +150,18 @@
                     <li>
                         <a href="https://facebook.com/k.olc.tw/" target="_blank">江明宗</a>
                     </li>
-                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a></li>
+                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function() {
-        $.getJSON('history.json', {}, function(c) {
-            var links = '';
-            for(k in c) {
-                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
-            }
-            $('#history').append(links);
-        });
-    })</script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        var baseUrl = '../../../';
+    </script>
+    <script src="../../../js/main.js"></script>
 </body>
+
 </html>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>社團法人中華種敦巴佛學會 @ 社團/財團法人資料檢索</title>
-    <meta name="description"
-        content="社團法人中華種敦巴佛學會 為弘揚顯密圓融之佛陀教法，以種敦巴之名乃因菩提道燈論之傳承祖師種敦巴勝者為阿帝夏大尊者的思想傳襲者，故追朔阿帝夏大尊者所著﹝菩提道之燈論﹞為基礎架構的﹝菩提道次第廣論﹞。廣植佛法，育化僧俗之人才；淨化社會人心，豐富生命內涵，建立圓融人生，創造謙恭有禮安和無爭之社會；及宏揚廣大利益眾生、救度眾生之大乘佛教為目的。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
+    <meta name="description" content="社團法人中華種敦巴佛學會 為弘揚顯密圓融之佛陀教法，以種敦巴之名乃因菩提道燈論之傳承祖師種敦巴勝者為阿帝夏大尊者的思想傳襲者，故追朔阿帝夏大尊者所著﹝菩提道之燈論﹞為基礎架構的﹝菩提道次第廣論﹞。廣植佛法，育化僧俗之人才；淨化社會人心，豐富生命內涵，建立圓融人生，創造謙恭有禮安和無爭之社會；及宏揚廣大利益眾生、救度眾生之大乘佛教為目的。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -26,6 +27,25 @@
         </div>
     </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <p class="hidden-sm hidden-xs">&nbsp;</p>
+                <form class="search-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" value="" class="form-control" placeholder="搜尋…" autofocus>
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-primary btn-foundation">找法人</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="hidden-sm hidden-xs">&nbsp;</p>
+            <div class="col-md-12">
+                <div class="btn-group">
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div id="FoundationsView" class="col-md-12">
                 <h2>社團法人中華種敦巴佛學會</h2>
@@ -59,9 +79,7 @@
                             <dt>功能</dt>
                             <dd>
                                 <div class="btn-group">
-                                    <a target="_blank"
-                                        href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/yxw7QaAtP94dDyyRfBg312RM-22VCqggdvTQAY4GQFKFZs7n72Y7boaImVN3"
-                                        class="btn btn-success btn-sm">原始連結</a>
+                                    <a target="_blank" href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/yxw7QaAtP94dDyyRfBg312RM-22VCqggdvTQAY4GQFKFZs7n72Y7boaImVN3" class="btn btn-success btn-sm">原始連結</a>
                                 </div>
                             </dd>
                         </dl>
@@ -130,20 +148,18 @@
                     <li>
                         <a href="https://facebook.com/k.olc.tw/" target="_blank">江明宗</a>
                     </li>
-                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a></li>
+                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function() {
-        $.getJSON('history.json', {}, function(c) {
-            var links = '';
-            for(k in c) {
-                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
-            }
-            $('#history').append(links);
-        });
-    })</script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        var baseUrl = '../../../';
+    </script>
+    <script src="../../../js/main.js"></script>
 </body>
+
 </html>

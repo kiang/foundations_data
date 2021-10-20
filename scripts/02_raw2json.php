@@ -32,7 +32,7 @@ $approvedBy3 = array(
 );
 $dateFields = ['收件日期', '登記日期', '公告日期', '設立登記日期', '結案日期', '歸檔日期', '發證日期', '註銷日期', '撤銷日期'];
 
-$dbFh = fopen($rootPath . '/db/dbKeys.csv', 'r');
+$dbFh = fopen($rootPath . '/docs/dbKeys.csv', 'r');
 $dbKeys = [];
 while($line = fgetcsv($dbFh, 2048)) {
     $line[0] = str_replace('　', '', $line[0]);

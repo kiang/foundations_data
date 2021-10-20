@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>財團法人基督教中國佈道會 @ 社團/財團法人資料檢索</title>
-    <meta name="description"
-        content="財團法人基督教中國佈道會 一、傳佈基督福音，引人歸主，建立教會。二、舉辦各樣教會更新之研討訓練聚會，訓練教會同工。三、從事國內外社會服（福）救助事工（其餘內容詳如新章程所載）。四、設立神學院、聖經學校或事奉訓練學校，造就傳道聖工人才。五、從事國內之佈道植堂及海外異文化宣教事工。六、開創藝術、媒體、網路、劇團等事工，在社會中塑造基督文化。七、連結、關懷、協助、支持其他基督教團體，並與其他海內外基督肢體在事工上合作。八、設立或捐助成立其他有關基督信仰之事工或事業（其餘內容詳如新章程所載）。九、設立出版機構，發行本會各項事工之出版品暨代理相關產品。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
+    <meta name="description" content="財團法人基督教中國佈道會 一、傳佈基督福音，引人歸主，建立教會。二、舉辦各樣教會更新之研討訓練聚會，訓練教會同工。三、從事國內外社會服（福）救助事工（其餘內容詳如新章程所載）。四、設立神學院、聖經學校或事奉訓練學校，造就傳道聖工人才。五、從事國內之佈道植堂及海外異文化宣教事工。六、開創藝術、媒體、網路、劇團等事工，在社會中塑造基督文化。七、連結、關懷、協助、支持其他基督教團體，並與其他海內外基督肢體在事工上合作。八、設立或捐助成立其他有關基督信仰之事工或事業（其餘內容詳如新章程所載）。九、設立出版機構，發行本會各項事工之出版品暨代理相關產品。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -26,6 +27,25 @@
         </div>
     </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <p class="hidden-sm hidden-xs">&nbsp;</p>
+                <form class="search-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" value="" class="form-control" placeholder="搜尋…" autofocus>
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-primary btn-foundation">找法人</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="hidden-sm hidden-xs">&nbsp;</p>
+            <div class="col-md-12">
+                <div class="btn-group">
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div id="FoundationsView" class="col-md-12">
                 <h2>財團法人基督教中國佈道會</h2>
@@ -59,9 +79,7 @@
                             <dt>功能</dt>
                             <dd>
                                 <div class="btn-group">
-                                    <a target="_blank"
-                                        href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/pHiCs23svSFuSWzvR2OQrR04QeBh-Nel_OwcJD31mj2k3MpXySVqSFZgRMvH"
-                                        class="btn btn-success btn-sm">原始連結</a>
+                                    <a target="_blank" href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/pHiCs23svSFuSWzvR2OQrR04QeBh-Nel_OwcJD31mj2k3MpXySVqSFZgRMvH" class="btn btn-success btn-sm">原始連結</a>
                                 </div>
                             </dd>
                         </dl>
@@ -130,20 +148,18 @@
                     <li>
                         <a href="https://facebook.com/k.olc.tw/" target="_blank">江明宗</a>
                     </li>
-                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a></li>
+                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function() {
-        $.getJSON('history.json', {}, function(c) {
-            var links = '';
-            for(k in c) {
-                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
-            }
-            $('#history').append(links);
-        });
-    })</script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        var baseUrl = '../../../';
+    </script>
+    <script src="../../../js/main.js"></script>
 </body>
+
 </html>

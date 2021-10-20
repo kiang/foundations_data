@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>財團法人台北市雙境廟 @ 社團/財團法人資料檢索</title>
-    <meta name="description"
-        content="財團法人台北市雙境廟 本財團永久性存立，奉祀水尾公老大公水尾姑娘，福德正神為主神，並供奉諸神像，以宏揚道教信仰真理，興辦社會公益慈善救濟事業為宗旨。
+    <meta name="description" content="財團法人台北市雙境廟 本財團永久性存立，奉祀水尾公老大公水尾姑娘，福德正神為主神，並供奉諸神像，以宏揚道教信仰真理，興辦社會公益慈善救濟事業為宗旨。
 （捐助方法：由康車、康海賜、周老牛、周水雲、謝仙偉、張坤灶、張閃、沈君墻、張金水、林昭卿、蔡石金、李金龍、潘以來、蘇得勝、周蕃薯、周煖、張安、鄭進陽、陳守仁、張景土、周昭明、方條、陳本、周廉、陳火生、黃天下、杜正文、杜正忠、蘇永成、陳金安、張文章、蘇阿仁、周福運、蘇佳森、吳寶鳳、周金獅、張春長、呂萬金、蘇德欽、胡戇釵、吳竹來、楊進仲、陳成業、陳福、張大木、黃昆助、王詩及、陳奇芳、蘇金寬、楊清吉、陳俊傑、李田、周萬、葉李美、吳文彩、李瑞生、周楊尾、彭林寶珠、李春成、賴金塗、蔡德欽、朱文、陳和、陳鐓仁、張東港、李江朝、劉克川、林學文、林秀雄、黃進興、許金得、陳墀泉、張綢、李金龍、林添淵、李春香等76位信徒共同捐助） / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -27,6 +28,25 @@
         </div>
     </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <p class="hidden-sm hidden-xs">&nbsp;</p>
+                <form class="search-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" value="" class="form-control" placeholder="搜尋…" autofocus>
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-primary btn-foundation">找法人</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="hidden-sm hidden-xs">&nbsp;</p>
+            <div class="col-md-12">
+                <div class="btn-group">
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div id="FoundationsView" class="col-md-12">
                 <h2>財團法人台北市雙境廟</h2>
@@ -61,9 +81,7 @@
                             <dt>功能</dt>
                             <dd>
                                 <div class="btn-group">
-                                    <a target="_blank"
-                                        href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/Rspopfu9SepcHoAm_HU1_dTPVbWN4jPUq79G2xLx5DNDCSwjvPs="
-                                        class="btn btn-success btn-sm">原始連結</a>
+                                    <a target="_blank" href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/Rspopfu9SepcHoAm_HU1_dTPVbWN4jPUq79G2xLx5DNDCSwjvPs=" class="btn btn-success btn-sm">原始連結</a>
                                 </div>
                             </dd>
                         </dl>
@@ -132,20 +150,18 @@
                     <li>
                         <a href="https://facebook.com/k.olc.tw/" target="_blank">江明宗</a>
                     </li>
-                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a></li>
+                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function() {
-        $.getJSON('history.json', {}, function(c) {
-            var links = '';
-            for(k in c) {
-                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
-            }
-            $('#history').append(links);
-        });
-    })</script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        var baseUrl = '../../../';
+    </script>
+    <script src="../../../js/main.js"></script>
 </body>
+
 </html>

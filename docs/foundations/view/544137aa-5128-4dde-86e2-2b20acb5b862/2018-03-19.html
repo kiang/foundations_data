@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>社團法人高雄市四維茶藝學會 @ 社團/財團法人資料檢索</title>
-    <meta name="description"
-        content="社團法人高雄市四維茶藝學會 本會因茶結緣，定期以茶會有切磋茶技，推廣台灣茶葉文化及人文風氣，精神上以「淨化風氣、促進和諧、互相關懷、分享快樂」為主題。以禮、義、廉、恥四維為根本。禮首尊行茶、奉茶需有一定之禮節與規範、不可亂；義當正～行茶者需舉止端莊優雅、如行雲流水、靜心不能有雜念；廉為清～佳茗湯色以明亮、透澈為佳，不可濁；恥知過～茶藝浩瀚，如壺中水，滿則溢，故需虛心求教才能進步、不可自滿。故以「四維」為名，並立為宗旨。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
+    <meta name="description" content="社團法人高雄市四維茶藝學會 本會因茶結緣，定期以茶會有切磋茶技，推廣台灣茶葉文化及人文風氣，精神上以「淨化風氣、促進和諧、互相關懷、分享快樂」為主題。以禮、義、廉、恥四維為根本。禮首尊行茶、奉茶需有一定之禮節與規範、不可亂；義當正～行茶者需舉止端莊優雅、如行雲流水、靜心不能有雜念；廉為清～佳茗湯色以明亮、透澈為佳，不可濁；恥知過～茶藝浩瀚，如壺中水，滿則溢，故需虛心求教才能進步、不可自滿。故以「四維」為名，並立為宗旨。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -26,6 +27,25 @@
         </div>
     </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <p class="hidden-sm hidden-xs">&nbsp;</p>
+                <form class="search-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" value="" class="form-control" placeholder="搜尋…" autofocus>
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-primary btn-foundation">找法人</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="hidden-sm hidden-xs">&nbsp;</p>
+            <div class="col-md-12">
+                <div class="btn-group">
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div id="FoundationsView" class="col-md-12">
                 <h2>社團法人高雄市四維茶藝學會</h2>
@@ -59,9 +79,7 @@
                             <dt>功能</dt>
                             <dd>
                                 <div class="btn-group">
-                                    <a target="_blank"
-                                        href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/4iaPcLcPbDARKdsRtHa2ZnS1DL1DdYAPHKe-6ps9tTi2R26dx1jPdAR6qrll"
-                                        class="btn btn-success btn-sm">原始連結</a>
+                                    <a target="_blank" href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/4iaPcLcPbDARKdsRtHa2ZnS1DL1DdYAPHKe-6ps9tTi2R26dx1jPdAR6qrll" class="btn btn-success btn-sm">原始連結</a>
                                 </div>
                             </dd>
                         </dl>
@@ -130,20 +148,18 @@
                     <li>
                         <a href="https://facebook.com/k.olc.tw/" target="_blank">江明宗</a>
                     </li>
-                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a></li>
+                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function() {
-        $.getJSON('history.json', {}, function(c) {
-            var links = '';
-            for(k in c) {
-                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
-            }
-            $('#history').append(links);
-        });
-    })</script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        var baseUrl = '../../../';
+    </script>
+    <script src="../../../js/main.js"></script>
 </body>
+
 </html>

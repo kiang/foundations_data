@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>財團法人台灣省台北市蓮友念佛團 @ 社團/財團法人資料檢索</title>
-    <meta name="description"
-        content="財團法人台灣省台北市蓮友念佛團 ⒈以舉行佛教集體修持自利利他為主體⒉本互助精神慰問護侍蓮友疾病及助念往生⒊舉辦慈善事業如救濟事項及推廣社會教育等
+    <meta name="description" content="財團法人台灣省台北市蓮友念佛團 ⒈以舉行佛教集體修持自利利他為主體⒉本互助精神慰問護侍蓮友疾病及助念往生⒊舉辦慈善事業如救濟事項及推廣社會教育等
 （p.s.捐助人尚有張陳慧融、雲奚嘯梅、王天鳴、林道棨、葉朱淑文、王淨觀、傅葉定珍、王楊阿金、項吳添枝、張錫章、陳張瑞卿、劉雅芬、劉曹寬興、何觀荃、俞周月珠、程念、劉懷聖、魏榕、李恆德、張瑞棠、孫劉蘇鸞、姚胡鳳英、徐任桂芳、張菊、華高瑤涵、何培堃、俞安澄、周春煦、王梅琴、傅瓊琳、江錢慧海、殷啓唐、李觀仁、岑煥娣、董頤元、吳張定瑞、沈玉琴、簡作楨、施忠信、樂雲家、朱肯堂、王大松、朱子占、王本空、史林碧香、謝韞華、張仁函、林齊梅英、何楊晉、李范宗禧、陳葉在芬、陳慧復、王明倫、洪琴貞、唐余興汧、李濟華、陳曹淑梅、楊楚芬） / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -27,6 +28,25 @@
         </div>
     </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <p class="hidden-sm hidden-xs">&nbsp;</p>
+                <form class="search-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" value="" class="form-control" placeholder="搜尋…" autofocus>
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-primary btn-foundation">找法人</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="hidden-sm hidden-xs">&nbsp;</p>
+            <div class="col-md-12">
+                <div class="btn-group">
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div id="FoundationsView" class="col-md-12">
                 <h2>財團法人台灣省台北市蓮友念佛團</h2>
@@ -61,9 +81,7 @@
                             <dt>功能</dt>
                             <dd>
                                 <div class="btn-group">
-                                    <a target="_blank"
-                                        href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/Eh24MFyMvSFW2D9OB7wU0rtRAXNxACvsQuXYRGito7w0I5_K6Sk="
-                                        class="btn btn-success btn-sm">原始連結</a>
+                                    <a target="_blank" href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/Eh24MFyMvSFW2D9OB7wU0rtRAXNxACvsQuXYRGito7w0I5_K6Sk=" class="btn btn-success btn-sm">原始連結</a>
                                 </div>
                             </dd>
                         </dl>
@@ -132,20 +150,18 @@
                     <li>
                         <a href="https://facebook.com/k.olc.tw/" target="_blank">江明宗</a>
                     </li>
-                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a></li>
+                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function() {
-        $.getJSON('history.json', {}, function(c) {
-            var links = '';
-            for(k in c) {
-                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
-            }
-            $('#history').append(links);
-        });
-    })</script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        var baseUrl = '../../../';
+    </script>
+    <script src="../../../js/main.js"></script>
 </body>
+
 </html>

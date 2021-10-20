@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>台灣維新 @ 社團/財團法人資料檢索</title>
-    <meta name="description"
-        content="台灣維新 「台灣維新」的創黨宗旨，就是要推動台灣政治、經濟、社會、教育、文化的「維新運動」：一、解構台灣中央集權集稅體制，推動財稅、權力下放，朝向扁平化小政府；解除政府過度干預及管制，活化民力；推動地方選舉比例代表制，及開放地方政黨，改革當前買票黑金政治；讓居民可以直接參與公共事務，振興地方活力及國家經濟。二、保障全民基本收入，小孩國家養，人人有屋住，建構老人、身心障礙、長照等完善社會安全福利體系，讓人人過一個安心有尊嚴的生活，成為公平、正義、均富的社會。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
+    <meta name="description" content="台灣維新 「台灣維新」的創黨宗旨，就是要推動台灣政治、經濟、社會、教育、文化的「維新運動」：一、解構台灣中央集權集稅體制，推動財稅、權力下放，朝向扁平化小政府；解除政府過度干預及管制，活化民力；推動地方選舉比例代表制，及開放地方政黨，改革當前買票黑金政治；讓居民可以直接參與公共事務，振興地方活力及國家經濟。二、保障全民基本收入，小孩國家養，人人有屋住，建構老人、身心障礙、長照等完善社會安全福利體系，讓人人過一個安心有尊嚴的生活，成為公平、正義、均富的社會。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -26,6 +27,25 @@
         </div>
     </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <p class="hidden-sm hidden-xs">&nbsp;</p>
+                <form class="search-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" value="" class="form-control" placeholder="搜尋…" autofocus>
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-primary btn-foundation">找法人</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="hidden-sm hidden-xs">&nbsp;</p>
+            <div class="col-md-12">
+                <div class="btn-group">
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div id="FoundationsView" class="col-md-12">
                 <h2>台灣維新</h2>
@@ -59,9 +79,7 @@
                             <dt>功能</dt>
                             <dd>
                                 <div class="btn-group">
-                                    <a target="_blank"
-                                        href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/I8Pdl9cfiBBVgijf2FO8SXe5c3RJu0wvQ4h1afB5BraMjXlh08mXNgtIPuBY"
-                                        class="btn btn-success btn-sm">原始連結</a>
+                                    <a target="_blank" href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/I8Pdl9cfiBBVgijf2FO8SXe5c3RJu0wvQ4h1afB5BraMjXlh08mXNgtIPuBY" class="btn btn-success btn-sm">原始連結</a>
                                 </div>
                             </dd>
                         </dl>
@@ -130,20 +148,18 @@
                     <li>
                         <a href="https://facebook.com/k.olc.tw/" target="_blank">江明宗</a>
                     </li>
-                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a></li>
+                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function() {
-        $.getJSON('history.json', {}, function(c) {
-            var links = '';
-            for(k in c) {
-                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
-            }
-            $('#history').append(links);
-        });
-    })</script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        var baseUrl = '../../../';
+    </script>
+    <script src="../../../js/main.js"></script>
 </body>
+
 </html>

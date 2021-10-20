@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>社團法人中華寶炬慈善功德會 @ 社團/財團法人資料檢索</title>
-    <meta name="description"
-        content="社團法人中華寶炬慈善功德會 成立一個美好、樸實、寂靜、莊嚴、簡單的環境，並遵行正行、正知見的儀軌，來宏揚原始佛教的實義，讓眾生走向解脫的菩提大道。結合家人的力量，為社會盡一份心，為教育工作盡一份力。創造社會和平的力量，為維護世界和平而努力。給予實相社會上生活在極苦之人，提供各方面協助和輔導，亦是本會發願推展的工作項目，例如：溫馨病房的心靈輔導與安住貧困家庭的生計輔導的協助和實質濟貧工作。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
+    <meta name="description" content="社團法人中華寶炬慈善功德會 成立一個美好、樸實、寂靜、莊嚴、簡單的環境，並遵行正行、正知見的儀軌，來宏揚原始佛教的實義，讓眾生走向解脫的菩提大道。結合家人的力量，為社會盡一份心，為教育工作盡一份力。創造社會和平的力量，為維護世界和平而努力。給予實相社會上生活在極苦之人，提供各方面協助和輔導，亦是本會發願推展的工作項目，例如：溫馨病房的心靈輔導與安住貧困家庭的生計輔導的協助和實質濟貧工作。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -26,6 +27,25 @@
         </div>
     </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <p class="hidden-sm hidden-xs">&nbsp;</p>
+                <form class="search-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" value="" class="form-control" placeholder="搜尋…" autofocus>
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-primary btn-foundation">找法人</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="hidden-sm hidden-xs">&nbsp;</p>
+            <div class="col-md-12">
+                <div class="btn-group">
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div id="FoundationsView" class="col-md-12">
                 <h2>社團法人中華寶炬慈善功德會</h2>
@@ -59,9 +79,7 @@
                             <dt>功能</dt>
                             <dd>
                                 <div class="btn-group">
-                                    <a target="_blank"
-                                        href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/Jgd71MqVGjLbnsA5yrp_YCJAX2WEjoR_xmXg3Ucc6oPY1E_hrjXH-s-SYhS1"
-                                        class="btn btn-success btn-sm">原始連結</a>
+                                    <a target="_blank" href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/Jgd71MqVGjLbnsA5yrp_YCJAX2WEjoR_xmXg3Ucc6oPY1E_hrjXH-s-SYhS1" class="btn btn-success btn-sm">原始連結</a>
                                 </div>
                             </dd>
                         </dl>
@@ -130,20 +148,18 @@
                     <li>
                         <a href="https://facebook.com/k.olc.tw/" target="_blank">江明宗</a>
                     </li>
-                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a></li>
+                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function() {
-        $.getJSON('history.json', {}, function(c) {
-            var links = '';
-            for(k in c) {
-                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
-            }
-            $('#history').append(links);
-        });
-    })</script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        var baseUrl = '../../../';
+    </script>
+    <script src="../../../js/main.js"></script>
 </body>
+
 </html>

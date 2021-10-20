@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>社團法人台灣國際約瑟糧倉慈善協會 @ 社團/財團法人資料檢索</title>
-    <meta name="description"
-        content="社團法人台灣國際約瑟糧倉慈善協會 旨在結合國際社會愛心善心人士、企業組織、社福機構、教會團體及地方政府等資源單位，發揮人飢己飢、人溺己溺的精神，期望藉由協會事工，喚起社會大眾關懷並協助偏遠地區及城市鄉鎮各角落的弱勢族群，藉此幫助弱勢族群恢復生命價值，重建家庭功能；並協助就學、就業、就醫、助養；透過基督的愛、聖經真理的教導，提昇其身心靈成長，進而協助使其生命成熟，不再只是受助者，而成為幫助者。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
+    <meta name="description" content="社團法人台灣國際約瑟糧倉慈善協會 旨在結合國際社會愛心善心人士、企業組織、社福機構、教會團體及地方政府等資源單位，發揮人飢己飢、人溺己溺的精神，期望藉由協會事工，喚起社會大眾關懷並協助偏遠地區及城市鄉鎮各角落的弱勢族群，藉此幫助弱勢族群恢復生命價值，重建家庭功能；並協助就學、就業、就醫、助養；透過基督的愛、聖經真理的教導，提昇其身心靈成長，進而協助使其生命成熟，不再只是受助者，而成為幫助者。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -26,6 +27,25 @@
         </div>
     </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <p class="hidden-sm hidden-xs">&nbsp;</p>
+                <form class="search-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" value="" class="form-control" placeholder="搜尋…" autofocus>
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-primary btn-foundation">找法人</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="hidden-sm hidden-xs">&nbsp;</p>
+            <div class="col-md-12">
+                <div class="btn-group">
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div id="FoundationsView" class="col-md-12">
                 <h2>社團法人台灣國際約瑟糧倉慈善協會</h2>
@@ -59,9 +79,7 @@
                             <dt>功能</dt>
                             <dd>
                                 <div class="btn-group">
-                                    <a target="_blank"
-                                        href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/6MC4hYSKDogPQY308llAntA8mEWxsPhpsdBJ15Lv34MXWZXAV0WlICLXJ7w="
-                                        class="btn btn-success btn-sm">原始連結</a>
+                                    <a target="_blank" href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/6MC4hYSKDogPQY308llAntA8mEWxsPhpsdBJ15Lv34MXWZXAV0WlICLXJ7w=" class="btn btn-success btn-sm">原始連結</a>
                                 </div>
                             </dd>
                         </dl>
@@ -130,20 +148,18 @@
                     <li>
                         <a href="https://facebook.com/k.olc.tw/" target="_blank">江明宗</a>
                     </li>
-                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a></li>
+                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function() {
-        $.getJSON('history.json', {}, function(c) {
-            var links = '';
-            for(k in c) {
-                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
-            }
-            $('#history').append(links);
-        });
-    })</script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        var baseUrl = '../../../';
+    </script>
+    <script src="../../../js/main.js"></script>
 </body>
+
 </html>

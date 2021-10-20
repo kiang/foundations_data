@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>財團法人高雄世運體育基金會 @ 社團/財團法人資料檢索</title>
-    <meta name="description"
-        content="財團法人高雄世運體育基金會 一、協助推動高雄市申辦國際性綜合運動賽會或其他國際性單項運動賽會相關事務。二、協助推動高雄市申辦全國運動會、全民運動會、其他全國性綜合運動賽會及全國性單項運動賽會相關事務。三、推展體育運動，發揚運動精神，並協力打造高雄市為體育首都，展縣海洋國家風貌，提升臺灣能見度。四、發揚體育運動之普世價值、體育運動技術之釐定、體育教練裁判培訓、體育運動場地及相關器具標準之建立、體育運動規則之研訂及體育運動禮儀之積極提倡。五、積極實現國家及高雄市之體育運動權。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
+    <meta name="description" content="財團法人高雄世運體育基金會 一、協助推動高雄市申辦國際性綜合運動賽會或其他國際性單項運動賽會相關事務。二、協助推動高雄市申辦全國運動會、全民運動會、其他全國性綜合運動賽會及全國性單項運動賽會相關事務。三、推展體育運動，發揚運動精神，並協力打造高雄市為體育首都，展縣海洋國家風貌，提升臺灣能見度。四、發揚體育運動之普世價值、體育運動技術之釐定、體育教練裁判培訓、體育運動場地及相關器具標準之建立、體育運動規則之研訂及體育運動禮儀之積極提倡。五、積極實現國家及高雄市之體育運動權。 / 社團/財團法人資料檢索提供簡單的介面檢索國內有登記立案的社團/財團法人" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -26,6 +27,25 @@
         </div>
     </nav>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <p class="hidden-sm hidden-xs">&nbsp;</p>
+                <form class="search-form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="keyword" value="" class="form-control" placeholder="搜尋…" autofocus>
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-primary btn-foundation">找法人</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="hidden-sm hidden-xs">&nbsp;</p>
+            <div class="col-md-12">
+                <div class="btn-group">
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div id="FoundationsView" class="col-md-12">
                 <h2>財團法人高雄世運體育基金會</h2>
@@ -59,9 +79,7 @@
                             <dt>功能</dt>
                             <dd>
                                 <div class="btn-group">
-                                    <a target="_blank"
-                                        href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/AiADCgzCIJjO6AbCcpLKCtsj24Dj7-PvqYZ4oMsX-T6s4CTzLC7z13TOXyo="
-                                        class="btn btn-success btn-sm">原始連結</a>
+                                    <a target="_blank" href="https://aomp109.judicial.gov.tw/judbp/whd6k/q/AiADCgzCIJjO6AbCcpLKCtsj24Dj7-PvqYZ4oMsX-T6s4CTzLC7z13TOXyo=" class="btn btn-success btn-sm">原始連結</a>
                                 </div>
                             </dd>
                         </dl>
@@ -130,20 +148,18 @@
                     <li>
                         <a href="https://facebook.com/k.olc.tw/" target="_blank">江明宗</a>
                     </li>
-                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a></li>
+                    <li><a href="https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01.htm" target="_blank">資料來源：司法院</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function() {
-        $.getJSON('history.json', {}, function(c) {
-            var links = '';
-            for(k in c) {
-                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
-            }
-            $('#history').append(links);
-        });
-    })</script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        var baseUrl = '../../../';
+    </script>
+    <script src="../../../js/main.js"></script>
 </body>
+
 </html>
