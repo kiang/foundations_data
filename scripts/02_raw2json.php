@@ -51,7 +51,11 @@ foreach($years AS $year => $yearPath) {
         if(file_exists($metaFile)) {
             $fh = fopen($metaFile, 'r');
             $header = fgetcsv($fh, 2048);
+            $header[0] = '登記案號';
             while($line = fgetcsv($fh, 2048)) {
+                if(count($line) !== 5) {
+                    continue;
+                }
                 $data = array_combine($header, $line);
                 if(!isset($pool['member'][$data['登記案號']])) {
                     $pool['member'][$data['登記案號']] = [];
@@ -65,8 +69,14 @@ foreach($years AS $year => $yearPath) {
         $fh = fopen($csvFile, 'r');
         $header = fgetcsv($fh, 2048);
         $header[0] = '登記案號';
-        while($line = fgetcsv($fh, 2048)) {
+        while($line = fgetcsv($fh, 2048, ',', '"', false)) {
+            if(count($line) !== 40) {
+                continue;
+            }
             $data = array_combine($header, $line);
+            if(empty($data['登記案號'])) {
+                continue;
+            }
             foreach($dateFields AS $dateField) {
                 if(strlen($data[$dateField]) === 7) {
                     $y = intval(substr($data[$dateField], 0, 3)) + 1911;
@@ -77,7 +87,6 @@ foreach($years AS $year => $yearPath) {
             }
             $data['許可機關日期'] = strtr($data['許可機關日期'], $approvedBy1);
             $data['許可機關日期'] = preg_replace($approvedBy2, $approvedBy3, $data['許可機關日期']);
-            $data['登記案號'] = trim($data['登記案號']);
             $dbKey = $data['法人名稱'] . $data['設立登記日期'];
             if(isset($listKeys[$data['許可機關日期']])) {
                 $pk = $listKeys[$data['許可機關日期']];
@@ -98,9 +107,11 @@ foreach($years AS $year => $yearPath) {
                 mkdir($pagePath, 0777, true);
             }
             $members = '';
-            foreach($pool['member'][$data['登記案號']] AS $member) {
-                $members .= '<dt>' . $member[0] . '</dt>';
-                $members .= '<dd>' . $member[1] . '</dd>';
+            if(!empty($pool['member'][$data['登記案號']])) {
+                foreach($pool['member'][$data['登記案號']] AS $member) {
+                    $members .= '<dt>' . $member[0] . '</dt>';
+                    $members .= '<dd>' . $member[1] . '</dd>';
+                }    
             }
             $page = strtr($templateContent, [
                 '{{field_name}}' => $data['法人名稱'],

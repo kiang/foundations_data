@@ -86,7 +86,7 @@
                     </div>
                     <div class="panel-body">
                         <p>&nbsp;</p>
-                        <div class="row">
+                        <div class="row" id="history">
                             <div class="col-md-2"><a href="index.html">最新版本</a></div>
                         </div>
                         <p>&nbsp;</p>
@@ -135,5 +135,15 @@
             </div>
         </div>
     </footer>
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>$(function() {
+        $.getJSON('history.json', {}, function(c) {
+            var links = '';
+            for(k in c) {
+                links += '<div class="col-md-2"><a href="' + k + '.html">' + k + '</a></div>';
+            }
+            $('#history').append(links);
+        });
+    })</script>
 </body>
 </html>
