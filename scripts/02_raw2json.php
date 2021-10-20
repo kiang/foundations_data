@@ -35,17 +35,14 @@ $dateFields = ['收件日期', '登記日期', '公告日期', '設立登記日�
 $dbFh = fopen($rootPath . '/docs/dbKeys.csv', 'r');
 $dbKeys = [];
 while($line = fgetcsv($dbFh, 2048)) {
-    $line[0] = str_replace('　', '', $line[0]);
     $dbKeys[$line[0]] = $line[1];
 }
 $listKeys = [];
 
-$pool = [
-    'member' => [],
-];
 $templateContent = file_get_contents($rootPath . '/db/template.html');
 foreach($years AS $year => $yearPath) {
     foreach(glob($yearPath . '/*_main.csv') AS $csvFile) {
+        $pool = [];
         $p = pathinfo($csvFile);
         $metaFile = $p['dirname'] . '/' . str_replace('_main', '_member', $p['basename']);
         if(file_exists($metaFile)) {
@@ -57,10 +54,10 @@ foreach($years AS $year => $yearPath) {
                     continue;
                 }
                 $data = array_combine($header, $line);
-                if(!isset($pool['member'][$data['登記案號']])) {
-                    $pool['member'][$data['登記案號']] = [];
+                if(!isset($pool[$data['登記案號']])) {
+                    $pool[$data['登記案號']] = [];
                 }
-                $pool['member'][$data['登記案號']][] = [
+                $pool[$data['登記案號']][] = [
                     $data['職稱'], $data['姓名']
                 ];
             }
@@ -96,7 +93,7 @@ foreach($years AS $year => $yearPath) {
             } else {
                 $pk = uuid_create();
                 $dbKeys[$dbKey] = $pk;
-                $aFh = fopen($rootPath . '/db/dbKeys.csv', 'a');
+                $aFh = fopen($rootPath . '/docs/dbKeys.csv', 'a');
                 fputcsv($aFh, [$dbKey, $pk]);
                 fclose($aFh);
                 $listKeys[$data['許可機關日期']] = $pk;
@@ -107,8 +104,8 @@ foreach($years AS $year => $yearPath) {
                 mkdir($pagePath, 0777, true);
             }
             $members = '';
-            if(!empty($pool['member'][$data['登記案號']])) {
-                foreach($pool['member'][$data['登記案號']] AS $member) {
+            if(!empty($pool[$data['登記案號']])) {
+                foreach($pool[$data['登記案號']] AS $member) {
                     $members .= '<dt>' . $member[0] . '</dt>';
                     $members .= '<dd>' . $member[1] . '</dd>';
                 }    
