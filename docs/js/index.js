@@ -1,6 +1,6 @@
 var foundations = [];
 $(function () {
-    $.get('dbKeys.csv', {}, function(c) {
+    $.get(baseUrl + 'dbKeys.csv', {}, function(c) {
         var lines = c.split(/\r?\n/);
         for(k in lines) {
             var cols = lines[k].split(',');
