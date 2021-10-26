@@ -30,13 +30,16 @@ old: http://cdcb.judicial.gov.tw/abbs/wkw/WHD6K00_DOWNLOADCVS.jsp?court=
 */
 
 $oFh = [];
-$headerOffice = ['登記案號', '序號', '分事務所地址', '網站連結'];
-$headerMember = ['登記案號', '序號', '職稱', '姓名', '網站連結'];
+$headerOffice = ['登記案號', '序號', '分事務所地址'];
+$headerMember = ['登記案號', '序號', '職稱', '姓名'];
+$urlYear = '';
+$urlPool = [];
 foreach ($courts as $k => $v) {
     $url = 'https://aomp109.judicial.gov.tw/judbp/whd6k/WHD6K01/PUB_DATA/' . $k . '_RA.csv';
     file_put_contents($rootPath . '/tmp/' . $k . '.csv', file_get_contents($url));
     $fh = fopen($rootPath . '/tmp/' . $k . '.csv', 'r');
     $header = fgetcsv($fh, 2048);
+    array_pop($header);
     $currentData = 'main';
     while ($line = fgetcsv($fh, 4096)) {
         $year = trim(substr($line[0], 0, 3));
@@ -61,11 +64,32 @@ foreach ($courts as $k => $v) {
             if (!file_exists($rawPath)) {
                 mkdir($rawPath, 0777, true);
             }
+            if($urlYear != $year) {
+                $urlYear = $year;
+                $urlYearFile = $rootPath . '/raw/' . $year . '/urlPool.csv';
+                if(file_exists($urlYearFile)) {
+                    $urlPool = [];
+                    $urlFh = fopen($urlYearFile, 'r');
+                    while($urlLine = fgetcsv($urlFh, 1024)) {
+                        $urlPool[$urlLine[0]] = $urlLine[1];
+                    }
+                    fclose($urlFh);
+                }
+            }
             if (!isset($oFh[$key])) {
                 $oFh[$key] = $rawPath . '/' . $k . '_' . $currentData . '.csv';
                 $aFh = fopen($oFh[$key], 'w');
                 fputcsv($aFh, $header);
                 fclose($aFh);
+            }
+            $lineUrl = array_pop($line);
+            $lineUrlParts = explode('/judbp/whd6k/q/', $lineUrl);
+            $lineUrlKey = $k . $line[0];
+            if(!isset($urlPool[$lineUrlKey]) && isset($lineUrlParts[1])) {
+                $urlPool[$lineUrlKey] = $lineUrlParts[1];
+                $urlFh = fopen($urlYearFile, 'a+');
+                fputcsv($urlFh, [$lineUrlKey, $urlPool[$lineUrlKey]]);
+                fclose($urlFh);
             }
             $aFh = fopen($oFh[$key], 'a');
             fputcsv($aFh, $line);
