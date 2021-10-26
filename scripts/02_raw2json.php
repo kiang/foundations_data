@@ -41,9 +41,17 @@ $listKeys = [];
 
 $templateContent = file_get_contents($rootPath . '/db/template.html');
 foreach($years AS $year => $yearPath) {
+    $urlPool = [];
+    $urlYearFile = $rootPath . '/raw/' . $year . '/urlPool.csv';
+    $urlFh = fopen($urlYearFile, 'r');
+    while($urlLine = fgetcsv($urlFh, 1024)) {
+        $urlPool[$urlLine[0]] = $urlLine[1];
+    }
+    fclose($urlFh);
     foreach(glob($yearPath . '/*_main.csv') AS $csvFile) {
         $pool = [];
         $p = pathinfo($csvFile);
+        $parts = explode('_', $p['filename']);
         $metaFile = $p['dirname'] . '/' . str_replace('_main', '_member', $p['basename']);
         if(file_exists($metaFile)) {
             $fh = fopen($metaFile, 'r');
@@ -67,7 +75,7 @@ foreach($years AS $year => $yearPath) {
         $header = fgetcsv($fh, 2048);
         $header[0] = '登記案號';
         while($line = fgetcsv($fh, 2048, ',', '"', false)) {
-            if(count($line) !== 40) {
+            if(count($line) !== 39) {
                 continue;
             }
             $data = array_combine($header, $line);
@@ -113,6 +121,7 @@ foreach($years AS $year => $yearPath) {
                     $members .= '<dd>' . $member[1] . '</dd>';
                 }    
             }
+            $urlKey = $parts[0] . $data['登記案號'];
             $page = strtr($templateContent, [
                 '{{field_name}}' => $data['法人名稱'],
                 '{{field_purpose}}' => $data['目的'],
@@ -124,7 +133,7 @@ foreach($years AS $year => $yearPath) {
                 '{{field_list_number}}' => $data['許可機關日期'],
                 '{{field_asset}}' => $data['財產總額'],
                 '{{field_date_update}}' => $data['登記日期'],
-                '{{field_url}}' => $data['網站連結'],
+                '{{field_url}}' => 'https://aomp109.judicial.gov.tw/judbp/whd6k/q/' . $urlPool[$urlKey],
                 '{{field_members}}' => $members,
             ]);
             file_put_contents($pagePath . '/index.html', $page);
