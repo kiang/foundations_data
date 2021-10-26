@@ -58,7 +58,7 @@ foreach($years AS $year => $yearPath) {
             $header = fgetcsv($fh, 2048);
             $header[0] = '登記案號';
             while($line = fgetcsv($fh, 2048)) {
-                if(count($line) !== 5) {
+                if(count($line) !== 4) {
                     continue;
                 }
                 $data = array_combine($header, $line);
