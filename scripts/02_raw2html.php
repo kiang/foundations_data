@@ -114,13 +114,15 @@ foreach($years AS $year => $yearPath) {
             if(!file_exists($pagePath)) {
                 mkdir($pagePath, 0777, true);
             }
-            $members = '';
+            $members = [];
             if(!empty($pool[$data['登記案號']])) {
                 foreach($pool[$data['登記案號']] AS $member) {
-                    $members .= '<dt>' . $member[0] . '</dt>';
-                    $members .= '<dd>' . $member[1] . '</dd>';
+                    $member[0] = str_replace('　', '', $member[0]);
+                    $memberKey = $member[0] . $member[1];
+                    $members[$memberKey] = '<dt>' . $member[0] . '</dt><dd>' . $member[1] . '</dd>';
                 }    
             }
+            ksort($members);
             $urlKey = $parts[0] . $data['登記案號'];
             $page = strtr($templateContent, [
                 '{{field_name}}' => $data['法人名稱'],
@@ -134,7 +136,7 @@ foreach($years AS $year => $yearPath) {
                 '{{field_asset}}' => $data['財產總額'],
                 '{{field_date_update}}' => $data['登記日期'],
                 '{{field_url}}' => 'https://aomp109.judicial.gov.tw/judbp/whd6k/q/' . $urlPool[$urlKey],
-                '{{field_members}}' => $members,
+                '{{field_members}}' => implode("\n", $members),
             ]);
             file_put_contents($pagePath . '/index.html', $page);
             file_put_contents($pagePath . '/' . $data['登記日期'] . '.html', $page);
