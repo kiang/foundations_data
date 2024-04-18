@@ -83,6 +83,7 @@ foreach ($years as $year => $yearPath) {
                 }
                 foreach ($line as $k => $v) {
                     $line[$k] = strtr($v, $memberPairs);
+                    $line[$k] = preg_replace('/[\x00-\x1F\x7F]/', '', $line[$k]);
                 }
                 $data = array_combine($header, $line);
                 if (!isset($pool[$data['登記案號']])) {
