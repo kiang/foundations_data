@@ -43,6 +43,14 @@ $jsonPath = $rootPath . '/docs/json';
 if (!file_exists($jsonPath)) {
     mkdir($jsonPath, 0777, true);
 }
+$manualFix = [
+    '544137a9-0c44-48ed-8482-2b20acb5b862/2815-12-27' => [
+        '登記日期' => '2015-12-27',
+    ],
+    '544137aa-a1d0-4119-9c27-2b20acb5b862/2031-12-30' => [
+        '登記日期' => '2013-12-30',
+    ],
+];
 
 foreach ($years as $year => $yearPath) {
     $urlPool = [];
@@ -109,6 +117,10 @@ foreach ($years as $year => $yearPath) {
                 fputcsv($aFh, [$dbKey, $pk]);
                 fclose($aFh);
                 $listKeys[$data['許可機關日期']] = $pk;
+            }
+            $manualCheckKey = $pk . '/' . $data['登記日期'];
+            if (isset($manualFix[$manualCheckKey])) {
+                $data = array_merge($data, $manualFix[$manualCheckKey]);
             }
 
             $data['members'] = [];
