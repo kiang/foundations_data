@@ -645,10 +645,6 @@
         "撤(註)銷機關文號": "",
         "撤(註)銷原因": "",
         "members": {
-            "董 事 長陳游介": [
-                "董 事 長",
-                "陳游介"
-            ],
             "董事劉燕琴": [
                 "董事",
                 "劉燕琴"
@@ -664,6 +660,10 @@
             "董事邱錫欽": [
                 "董事",
                 "邱錫欽"
+            ],
+            "董事長陳游介": [
+                "董事長",
+                "陳游介"
             ]
         },
         "url": "https:\/\/aomp109.judicial.gov.tw\/judbp\/whd6k\/q\/ltZPMnMXRJmWlI4P-7CGgKpQGbDfuyxdcncEnGK3GrfQEr7XOvTS6oDQ2jQ="

@@ -52,6 +52,12 @@ $manualFix = [
     ],
 ];
 
+$memberPairs = [
+    '　' => '',
+    ' ' => '',
+    '\\' => '',
+];
+
 foreach ($years as $year => $yearPath) {
     $urlPool = [];
     $urlYearFile = $rootPath . '/raw/' . $year . '/urlPool.csv';
@@ -73,8 +79,8 @@ foreach ($years as $year => $yearPath) {
                 if (count($line) !== 4) {
                     continue;
                 }
-                foreach($line AS $k => $v) {
-                    $line[$k] = str_replace('　', '', $v);
+                foreach ($line as $k => $v) {
+                    $line[$k] = strtr($v, $memberPairs);
                 }
                 $data = array_combine($header, $line);
                 if (!isset($pool[$data['登記案號']])) {

@@ -320,14 +320,6 @@
                 "常務董事",
                 "韋特明"
             ],
-            "董  事蔡春源": [
-                "董  事",
-                "蔡春源"
-            ],
-            "董  事蔡淑明": [
-                "董  事",
-                "蔡淑明"
-            ],
             "董事樂曉雯": [
                 "董事",
                 "樂曉雯"
@@ -335,6 +327,14 @@
             "董事羅鳳英": [
                 "董事",
                 "羅鳳英"
+            ],
+            "董事蔡春源": [
+                "董事",
+                "蔡春源"
+            ],
+            "董事蔡淑明": [
+                "董事",
+                "蔡淑明"
             ],
             "董事長韋秀蘭": [
                 "董事長",
@@ -383,14 +383,6 @@
                 "常務董事",
                 "韋特明"
             ],
-            "董  事蔡春源": [
-                "董  事",
-                "蔡春源"
-            ],
-            "董  事蔡淑明": [
-                "董  事",
-                "蔡淑明"
-            ],
             "董事林琪正": [
                 "董事",
                 "林琪正"
@@ -398,6 +390,14 @@
             "董事柯傑瑞": [
                 "董事",
                 "柯傑瑞"
+            ],
+            "董事蔡春源": [
+                "董事",
+                "蔡春源"
+            ],
+            "董事蔡淑明": [
+                "董事",
+                "蔡淑明"
             ],
             "董事長韋秀蘭": [
                 "董事長",
@@ -438,17 +438,17 @@
         "撤(註)銷機關文號": "",
         "撤(註)銷原因": "",
         "members": {
-            "(FREDRICKNORMAN VOI": [
+            "(FREDRICKNORMANVOI": [
                 "(FREDRICK",
-                "NORMAN VOI"
+                "NORMANVOI"
             ],
-            "(GERALD CLARENCE COO": [
-                "(GERALD CL",
-                "ARENCE COO"
+            "(GERALDCLARENCECOO": [
+                "(GERALDCL",
+                "ARENCECOO"
             ],
-            "(PAULA HELEN VOIGTMA": [
-                "(PAULA HEL",
-                "EN VOIGTMA"
+            "(PAULAHELENVOIGTMA": [
+                "(PAULAHEL",
+                "ENVOIGTMA"
             ],
             "常務董事解慧珍": [
                 "常務董事",
@@ -458,12 +458,12 @@
                 "常務董事",
                 "韋特明"
             ],
-            "董  事林琪正": [
-                "董  事",
+            "董事林琪正": [
+                "董事",
                 "林琪正"
             ],
-            "董  事柯傑瑞": [
-                "董  事",
+            "董事柯傑瑞": [
+                "董事",
                 "柯傑瑞"
             ],
             "董事蔡春源": [
@@ -513,17 +513,17 @@
         "撤(註)銷機關文號": "",
         "撤(註)銷原因": "",
         "members": {
-            "(FREDRICKNORMAN VOI": [
+            "(FREDRICKNORMANVOI": [
                 "(FREDRICK",
-                "NORMAN VOI"
+                "NORMANVOI"
             ],
-            "(GERALD CLARENCE COO": [
-                "(GERALD CL",
-                "ARENCE COO"
+            "(GERALDCLARENCECOO": [
+                "(GERALDCL",
+                "ARENCECOO"
             ],
-            "(PAULA HELEN VOIGTMA": [
-                "(PAULA HEL",
-                "EN VOIGTMA"
+            "(PAULAHELENVOIGTMA": [
+                "(PAULAHEL",
+                "ENVOIGTMA"
             ],
             "常務董事解慧珍": [
                 "常務董事",
@@ -533,12 +533,12 @@
                 "常務董事",
                 "韋特明"
             ],
-            "董  事林琪正": [
-                "董  事",
+            "董事林琪正": [
+                "董事",
                 "林琪正"
             ],
-            "董  事柯傑瑞": [
-                "董  事",
+            "董事柯傑瑞": [
+                "董事",
                 "柯傑瑞"
             ],
             "董事王崇豪": [
@@ -600,17 +600,17 @@
                 "常務董事",
                 "韋特明"
             ],
-            "董  事束有明": [
-                "董  事",
+            "董事束有明": [
+                "董事",
                 "束有明"
-            ],
-            "董  事王崇豪": [
-                "董  事",
-                "王崇豪"
             ],
             "董事林琪正": [
                 "董事",
                 "林琪正"
+            ],
+            "董事王崇豪": [
+                "董事",
+                "王崇豪"
             ],
             "董事蔡淑明": [
                 "董事",
@@ -927,9 +927,9 @@
                 "常務董事",
                 "解慧珍"
             ],
-            "常務董事韋特明（Fredrick N. Voigtmann）": [
+            "常務董事韋特明（FredrickN.Voigtmann）": [
                 "常務董事",
-                "韋特明（Fredrick N. Voigtmann）"
+                "韋特明（FredrickN.Voigtmann）"
             ],
             "董事李國瑋": [
                 "董事",
@@ -947,9 +947,9 @@
                 "董事",
                 "蔡淑明"
             ],
-            "董事長韋秀蘭（Paula H. Voigtmann）": [
+            "董事長韋秀蘭（PaulaH.Voigtmann）": [
                 "董事長",
-                "韋秀蘭（Paula H. Voigtmann）"
+                "韋秀蘭（PaulaH.Voigtmann）"
             ]
         },
         "url": "https:\/\/aomp109.judicial.gov.tw\/judbp\/whd6k\/q\/-uhvupfgRI02mRPa7oWRcV2ZlDurD4da8eT4bqiAZFofRnUlLq7DIkkptxLp"
@@ -990,9 +990,9 @@
                 "常務董事",
                 "解慧珍"
             ],
-            "常務董事韋特明（Fredrick N. Voigtmann）": [
+            "常務董事韋特明（FredrickN.Voigtmann）": [
                 "常務董事",
-                "韋特明（Fredrick N. Voigtmann）"
+                "韋特明（FredrickN.Voigtmann）"
             ],
             "董事李國瑋": [
                 "董事",
@@ -1010,9 +1010,9 @@
                 "董事",
                 "鍾兆馨"
             ],
-            "董事長韋秀蘭（Paula H. Voigtmann）": [
+            "董事長韋秀蘭（PaulaH.Voigtmann）": [
                 "董事長",
-                "韋秀蘭（Paula H. Voigtmann）"
+                "韋秀蘭（PaulaH.Voigtmann）"
             ]
         },
         "url": "https:\/\/aomp109.judicial.gov.tw\/judbp\/whd6k\/q\/f6ArsRvHDMDgowDaEEdU1gjONw49fflvUNIxn5I7BeWSpQWTHamExlbLjnOI"
@@ -1049,13 +1049,13 @@
         "撤(註)銷機關文號": "",
         "撤(註)銷原因": "",
         "members": {
-            "常務董事韋特明（Fredrick N. Voigtmann）": [
+            "常務董事韋特明（FredrickN.Voigtmann）": [
                 "常務董事",
-                "韋特明（Fredrick N. Voigtmann）"
+                "韋特明（FredrickN.Voigtmann）"
             ],
-            "常務董事韋秀蘭（Paula H. Voigtmann）": [
+            "常務董事韋秀蘭（PaulaH.Voigtmann）": [
                 "常務董事",
-                "韋秀蘭（Paula H. Voigtmann）"
+                "韋秀蘭（PaulaH.Voigtmann）"
             ],
             "董事張小玲": [
                 "董事",
@@ -1112,13 +1112,13 @@
         "撤(註)銷機關文號": "",
         "撤(註)銷原因": "",
         "members": {
-            "常務董事韋特明（Fredrick N. Voigtmann）": [
+            "常務董事韋特明（FredrickN.Voigtmann）": [
                 "常務董事",
-                "韋特明（Fredrick N. Voigtmann）"
+                "韋特明（FredrickN.Voigtmann）"
             ],
-            "常務董事韋秀蘭（Paula H. Voigtmann）": [
+            "常務董事韋秀蘭（PaulaH.Voigtmann）": [
                 "常務董事",
-                "韋秀蘭（Paula H. Voigtmann）"
+                "韋秀蘭（PaulaH.Voigtmann）"
             ],
             "董事張小玲": [
                 "董事",
@@ -1175,13 +1175,13 @@
         "撤(註)銷機關文號": "",
         "撤(註)銷原因": "",
         "members": {
-            "常務董事韋特明（Fredrick N. Voigtmann）": [
+            "常務董事韋特明（FredrickN.Voigtmann）": [
                 "常務董事",
-                "韋特明（Fredrick N. Voigtmann）"
+                "韋特明（FredrickN.Voigtmann）"
             ],
-            "常務董事韋秀蘭（Paula H. Voigtmann）": [
+            "常務董事韋秀蘭（PaulaH.Voigtmann）": [
                 "常務董事",
-                "韋秀蘭（Paula H. Voigtmann）"
+                "韋秀蘭（PaulaH.Voigtmann）"
             ],
             "董事張小玲": [
                 "董事",
@@ -1238,13 +1238,13 @@
         "撤(註)銷機關文號": "",
         "撤(註)銷原因": "",
         "members": {
-            "常務董事韋特明（Fredrick N. Voigtmann）": [
+            "常務董事韋特明（FredrickN.Voigtmann）": [
                 "常務董事",
-                "韋特明（Fredrick N. Voigtmann）"
+                "韋特明（FredrickN.Voigtmann）"
             ],
-            "常務董事韋秀蘭（Paula H. Voigtmann）": [
+            "常務董事韋秀蘭（PaulaH.Voigtmann）": [
                 "常務董事",
-                "韋秀蘭（Paula H. Voigtmann）"
+                "韋秀蘭（PaulaH.Voigtmann）"
             ],
             "董事張小玲": [
                 "董事",
@@ -1321,13 +1321,13 @@
                 "董事",
                 "陳彩文"
             ],
-            "董事韋特明(Fredrick N. Voigtmann)": [
+            "董事韋特明(FredrickN.Voigtmann)": [
                 "董事",
-                "韋特明(Fredrick N. Voigtmann)"
+                "韋特明(FredrickN.Voigtmann)"
             ],
-            "董事韋秀蘭(Paula H. Voigtmann)": [
+            "董事韋秀蘭(PaulaH.Voigtmann)": [
                 "董事",
-                "韋秀蘭(Paula H. Voigtmann)"
+                "韋秀蘭(PaulaH.Voigtmann)"
             ]
         },
         "url": "https:\/\/aomp109.judicial.gov.tw\/judbp\/whd6k\/q\/tvCNSKZY-hikPQ9ZTy2crxfbe4Cf6LfhvlAnPCh542xccsMH26sJt6oXJg-G"

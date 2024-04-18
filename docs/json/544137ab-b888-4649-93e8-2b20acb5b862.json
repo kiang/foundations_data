@@ -385,10 +385,6 @@
         "撤(註)銷機關文號": "",
         "撤(註)銷原因": "",
         "members": {
-            "董 事 長朱雪娥": [
-                "董 事 長",
-                "朱雪娥"
-            ],
             "董事林敏瓊": [
                 "董事",
                 "林敏瓊"
@@ -412,6 +408,10 @@
             "董事盧志淵": [
                 "董事",
                 "盧志淵"
+            ],
+            "董事長朱雪娥": [
+                "董事長",
+                "朱雪娥"
             ]
         },
         "url": "https:\/\/aomp109.judicial.gov.tw\/judbp\/whd6k\/q\/8BOZOYkpO1MecgpV1mOW0vWFoytRyMZp71nibsNBgjQyaiVJnBq01pMwpCs="
