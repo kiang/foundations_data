@@ -73,6 +73,9 @@ foreach ($years as $year => $yearPath) {
                 if (count($line) !== 4) {
                     continue;
                 }
+                foreach($line AS $k => $v) {
+                    $line[$k] = str_replace('　', '', $v);
+                }
                 $data = array_combine($header, $line);
                 if (!isset($pool[$data['登記案號']])) {
                     $pool[$data['登記案號']] = [];
@@ -126,7 +129,6 @@ foreach ($years as $year => $yearPath) {
             $data['members'] = [];
             if (!empty($pool[$data['登記案號']])) {
                 foreach ($pool[$data['登記案號']] as $member) {
-                    $member[0] = str_replace('　', '', $member[0]);
                     $memberKey = $member[0] . $member[1];
                     $data['members'][$memberKey] = $member;
                 }
