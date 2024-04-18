@@ -72,6 +72,8 @@ foreach ($years as $year => $yearPath) {
         $parts = explode('_', $p['filename']);
         $metaFile = $p['dirname'] . '/' . str_replace('_main', '_member', $p['basename']);
         if (file_exists($metaFile)) {
+            $meta = file_get_contents($metaFile);
+            file_put_contents($metaFile, str_replace('\\', '', $meta));
             $fh = fopen($metaFile, 'r');
             $header = fgetcsv($fh, 2048);
             $header[0] = '登記案號';

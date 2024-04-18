@@ -89,7 +89,20 @@
         "撤銷日期": "",
         "撤(註)銷機關文號": "",
         "撤(註)銷原因": "",
-        "members": [],
+        "members": {
+            "董事白謙德": [
+                "董事",
+                "白謙德"
+            ],
+            "董事長王奧篤": [
+                "董事長",
+                "王奧篤"
+            ],
+            "董事陶恩生": [
+                "董事",
+                "陶恩生"
+            ]
+        },
         "url": "https:\/\/aomp109.judicial.gov.tw\/judbp\/whd6k\/q\/4UHZBgQHsRzv-U19bIUNwHrpNOGyT_CUlL9xJwZvjG5omypwF9U="
     },
     "1984-02-14": {
