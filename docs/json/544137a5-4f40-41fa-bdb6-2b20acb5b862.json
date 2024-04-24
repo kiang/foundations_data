@@ -574,7 +574,36 @@
         "撤銷日期": "",
         "撤(註)銷機關文號": "",
         "撤(註)銷原因": "",
-        "members": [],
+        "members": {
+            "董事JanuarTjandra": [
+                "董事",
+                "JanuarTjandra"
+            ],
+            "董事李振齡": [
+                "董事",
+                "李振齡"
+            ],
+            "董事林曼麗": [
+                "董事",
+                "林曼麗"
+            ],
+            "董事王金山": [
+                "董事",
+                "王金山"
+            ],
+            "董事長陳泰銘": [
+                "董事長",
+                "陳泰銘"
+            ],
+            "董事陳少曼": [
+                "董事",
+                "陳少曼"
+            ],
+            "董事魏永篤": [
+                "董事",
+                "魏永篤"
+            ]
+        },
         "url": "https:\/\/aomp109.judicial.gov.tw\/judbp\/whd6k\/q\/2UMohgxCM-mzRPQufik8vLsa1pO0gfegA9bfTl2bjMVvaYX8ML3wQF9TWVMA"
     }
 }
